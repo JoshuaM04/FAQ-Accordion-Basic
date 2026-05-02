@@ -9,4 +9,35 @@ body {
     align-items: center;
     min-height: 100dvh;
     padding: 20px;
+    background-color: hsl(275, 100%, 97%);
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    .topic-container {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        align-items: center;
+        gap: 2rem;
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        button {
+            justify-self: end;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            border: 0;
+        }
+
+        button.btn-closed {
+            background-image: url('./assets/images/icon-plus.svg');
+            background-position: center;
+        }
+    }
 }
