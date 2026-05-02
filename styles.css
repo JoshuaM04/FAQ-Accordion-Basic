@@ -3,6 +3,7 @@
 }
 
 body {
+    font-family: "Work Sans", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,14 +13,31 @@ body {
     background-color: hsl(275, 100%, 97%);
 }
 
+header {
+    background-image: url('./assets/images/background-pattern-mobile.svg');
+    background-position: center;
+}
+
 main {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+    width: 320px;
+
+    .heading-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        #star-icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
 
     .topic-container {
         display: grid;
-        grid-template-columns: 220px 1fr;
+        grid-template-columns: 200px 1fr;
         align-items: center;
         gap: 2rem;
 
@@ -39,5 +57,17 @@ main {
             background-image: url('./assets/images/icon-plus.svg');
             background-position: center;
         }
+    }
+
+    .closed-section {
+        display: none;
+    }
+
+    .open-section {
+        display: block;
+    }
+
+    p {
+        color: gray;
     }
 }
