@@ -66,6 +66,10 @@ main {
             background-image: url('./assets/images/icon-plus.svg');
             background-position: center;
         }
+        button.btn-open {
+            background-image: url('./assets/images/icon-minus.svg');
+            background-position: center;
+        }
     }
 
     .closed-section {
